@@ -10,7 +10,7 @@ genai.configure(api_key=os.getenv("GEMINI_API_KEY"))
 
 model = genai.GenerativeModel(
     model_name="gemini-2.5-flash",
-    system_instruction="You are Jarvis, a helpful virtual assistant. Keep all your responses extremely concise, brief, and to the point. Do not give long explanations."
+    system_instruction="You are Jarvis, a helpful virtual assistant. Keep all your responses extremely concise, brief, and to the point. keep the all answers between 60 to 100 words."
 )
 
 newsapi = os.getenv("CURRENTS_API_KEY")
